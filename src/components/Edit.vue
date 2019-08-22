@@ -2,7 +2,7 @@
   <div class="container">
         <div class="card">
             <div class="card-header">
-                <h3>Edit Item</h3>
+                <h3>Edit Poem</h3>
             </div>
             <div class="card-body">
                 <form v-on:submit.prevent="updateItem">
