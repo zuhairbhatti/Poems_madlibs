@@ -11,6 +11,7 @@ poem is created! To view the poem go to 'All Items'
 
 
 To install the proper packages and scripts one will need to run the following commands:
+   
     1. npm install -g @vue/cli
     2. npm install vue-router axios vue-axios --save
     3. npm install bootstrap --save
@@ -25,6 +26,7 @@ To install the proper packages and scripts one will need to run the following co
 
 
 To run the program I had 3 terminal tabs open at the root of the project:
+    
     1. On the first tab run the command 'mongod' to run the database
     2. On the second tab run the command 'npm run serve'
     3. On the third tab run the command 'nodemon server'
