@@ -6,8 +6,11 @@ Used vue create command to get this started. Downloaded the basic dependencies w
 Also used bootstrap which was imported in the main.js file to add a basic styling
 
 The program starts on the localhost:8080/create page where the user adds their 3
-nouns, 3 adjs, 3 advs, 3 prepostions, and 3 verbs. When they click 'Add Item' their 
-poem is created! To view the poem go to 'All Items'
+nouns, 3 adjs, 3 advs, 3 prepostions, and 3 verbs. When they click 'Add Poem' their 
+poem is created! To view the poem go to 'All Poems', a link to 'All Poems' is in the footer as 
+well as the header for easier access. A disclaimer, once you press 'Add Poem', the word slots do not 
+clear automatically, and you have to go to all poems manually. But going back to 'Add Poem' after will
+have a blank slate.
 
 
 To install the proper packages and scripts one will need to run the following commands:
@@ -18,6 +21,7 @@ To install the proper packages and scripts one will need to run the following co
     4. npm install nprogress --save
     5. npm install --save express body-parser cors mongoose
     6. npm install nodemon --save-dev
+    7. npm install moment-timezone 
 
     ** NOTE **
     To run the mongoDB, I had to download HomeBrew first, then was able to download 
