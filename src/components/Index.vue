@@ -1,13 +1,14 @@
 <template>
     <div>
-        <h1>Poems</h1>
+
 
         <table class="table table-hover">
             <thead>
             <tr>
-                <td>Poems</td>
-                <td>Time Created</td>
-                <td>Actions</td>
+                <td class = "title">Poems</td>
+                <td class = "title">Time Created</td>
+                <td class = "title">Edit</td>
+                <td class = "title">Delete</td>
             </tr>
             </thead>
 
@@ -65,3 +66,20 @@
         }
     }
 </script>
+
+<style scoped>
+    h1{
+        color:white;
+    }
+    td{
+        background-color: rgb(255, 255, 196);
+    }
+    .title{
+        text-shadow: 2px 5px 4px grey;
+    }
+    @media screen and (max-width: 1000px) {
+        .title{
+            font-size: 20px;
+        }
+    }
+</style>
