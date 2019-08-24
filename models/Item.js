@@ -1,11 +1,13 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 const moment = require('moment-timezone');
-var dateNow = moment.tz(Date.now(),"America/Los_Angeles").format('MMMM Do YYYY, h:mm:ss a');
+var dateNow = moment.tz(Date.now(),"America/Los_Angeles").format('MMMM Do YYYY');
+
 
 var Item = new Schema({
   timestamp: {
     type: String, default: dateNow
+
   },
   title:{
     type: String
