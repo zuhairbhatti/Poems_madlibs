@@ -8,7 +8,7 @@
                 <form v-on:submit.prevent="addItem">
                     <div class="form-group">
                         <label>Name Your MadLibs Poem</label>
-                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.title"/>
+                        <input type="text" class="form-control" v-model = "item.title"/>
                     </div>
                     <div class="form-group">
                         <label>Noun 1</label>
