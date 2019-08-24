@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Vuelidate from "vuelidate";
 import VueRouter from 'vue-router';
 import VueAxios from 'vue-axios';
 import axios from 'axios';
@@ -11,9 +12,15 @@ import Index from './components/Index.vue';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/nprogress/nprogress.css'
+import './../node_modules/bulma/css/bulma.css';
+// import './../node_modules/foundation-sites/dist/css/foundation.min.css';
+// import './../node_modules/foundation-sites/dist/js/foundation.min.js';
+
 
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
+Vue.use(Vuelidate);
+
 
 Vue.config.productionTip = false;
 

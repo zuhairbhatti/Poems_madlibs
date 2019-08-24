@@ -7,67 +7,71 @@
             <div class="card-body">
                 <form v-on:submit.prevent="addItem">
                     <div class="form-group">
+                        <label>Name Your MadLibs Poem</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.title"/>
+                    </div>
+                    <div class="form-group">
                         <label>Noun 1</label>
-                        <input type="text" class="form-control" v-model = "item.Noun1"/>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Noun1"/>
                     </div>
                     <div class="form-group">
                         <label>Noun 2</label>
-                        <input type="text" class="form-control" v-model = "item.Noun2"/>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Noun2"/>
                     </div>
                     <div class="form-group">
                         <label>Noun 3</label>
-                        <input type="text" class="form-control" v-model = "item.Noun3"/>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Noun3"/>
                     </div>
                     <div class="form-group">
-                        <label>Adj 1</label>
-                        <input type="text" class="form-control" v-model = "item.Adj1"/>
+                        <label>Adjective 1</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Adj1"/>
                     </div>
                     <div class="form-group">
-                        <label>Adj 2</label>
-                        <input type="text" class="form-control" v-model = "item.Adj2"/>
+                        <label>Adjective 2</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Adj2"/>
                     </div>
                     <div class="form-group">
-                        <label>Adj 3</label>
-                        <input type="text" class="form-control" v-model = "item.Adj3"/>
+                        <label>Adjective 3</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Adj3"/>
                     </div>
                     <div class="form-group">
-                        <label>Adv 1</label>
-                        <input type="text" class="form-control" v-model = "item.Adv1"/>
+                        <label>Adverb 1</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Adv1"/>
                     </div>
                     <div class="form-group">
-                        <label>Adv 2</label>
-                        <input type="text" class="form-control" v-model = "item.Adv2"/>
+                        <label>Adverb 2</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Adv2"/>
                     </div>
                     <div class="form-group">
-                        <label>Adv 3</label>
-                        <input type="text" class="form-control" v-model = "item.Adv3"/>
+                        <label>Adverb 3</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Adv3"/>
                     </div>
                     <div class="form-group">
-                        <label>Prep 1</label>
-                        <input type="text" class="form-control" v-model = "item.Prep1"/>
+                        <label>Preposition 1</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Prep1"/>
                     </div>
                     <div class="form-group">
-                        <label>Prep 2</label>
-                        <input type="text" class="form-control" v-model = "item.Prep2"/>
+                        <label>Preposition 2</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Prep2"/>
                     </div>
                     <div class="form-group">
-                        <label>Prep 3</label>
-                        <input type="text" class="form-control" v-model = "item.Prep3"/>
+                        <label>Preposition 3</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Prep3"/>
                     </div>
                     <div class="form-group">
                         <label>Verb 1</label>
-                        <input type="text" class="form-control" v-model = "item.Verb1"/>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Verb1"/>
                     </div>
                     <div class="form-group">
                         <label>Verb 2</label>
-                        <input type="text" class="form-control" v-model = "item.Verb2"/>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Verb2"/>
                     </div>
                     <div class="form-group">
                         <label>Verb 3</label>
-                        <input type="text" class="form-control" v-model = "item.Verb3"/>
+                        <input type="text" class="form-control" pattern="[a-zA-Z]{1,}" v-model = "item.Verb3"/>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="Add Item"/>
+                        <input type="submit" class="btn btn-primary" value="Add Poem"/>
                     </div>
                 </form>
             </div>
@@ -76,6 +80,7 @@
 </template>
 
 <script>
+var moment = require('moment');
 export default {
   components: {
       name: 'AddItem'
@@ -93,3 +98,23 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .form-group{
+        background-color: white;
+        /* width: 40%; */
+  
+    }
+    .card-body{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        opacity: 10%;
+        align-self: center;
+    }
+    h3{
+        font-weight: bold;
+    }
+
+</style>

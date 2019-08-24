@@ -19,39 +19,39 @@
                         <input type="text" class="form-control" v-model = "item.Noun3"/>
                     </div>
                     <div class="form-group">
-                        <label>Adj 1</label>
+                        <label>Adjective 1</label>
                         <input type="text" class="form-control" v-model = "item.Adj1"/>
                     </div>
                     <div class="form-group">
-                        <label>Adj 2</label>
+                        <label>Adjective 2</label>
                         <input type="text" class="form-control" v-model = "item.Adj2"/>
                     </div>
                     <div class="form-group">
-                        <label>Adj 3</label>
+                        <label>Adjective 3</label>
                         <input type="text" class="form-control" v-model = "item.Adj3"/>
                     </div>
                     <div class="form-group">
-                        <label>Adv 1</label>
+                        <label>Adverb 1</label>
                         <input type="text" class="form-control" v-model = "item.Adv1"/>
                     </div>
                     <div class="form-group">
-                        <label>Adv 2</label>
+                        <label>Adverb 2</label>
                         <input type="text" class="form-control" v-model = "item.Adv2"/>
                     </div>
                     <div class="form-group">
-                        <label>Adv 3</label>
+                        <label>Adverb 3</label>
                         <input type="text" class="form-control" v-model = "item.Adv3"/>
                     </div>
                     <div class="form-group">
-                        <label>Prep 1</label>
+                        <label>Preposition 1</label>
                         <input type="text" class="form-control" v-model = "item.Prep1"/>
                     </div>
                     <div class="form-group">
-                        <label>Prep 2</label>
+                        <label>Preposition 2</label>
                         <input type="text" class="form-control" v-model = "item.Prep2"/>
                     </div>
                     <div class="form-group">
-                        <label>Prep 3</label>
+                        <label>Preposition 3</label>
                         <input type="text" class="form-control" v-model = "item.Prep3"/>
                     </div>
                     <div class="form-group">
@@ -67,7 +67,7 @@
                         <input type="text" class="form-control" v-model = "item.Verb3"/>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="Update Item"/>
+                        <input type="submit" class="btn btn-primary" value="Update Poem"/>
                     </div>
                 </form>
             </div>

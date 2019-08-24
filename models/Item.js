@@ -1,8 +1,15 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+const moment = require('moment-timezone');
+var dateNow = moment.tz(Date.now(),"America/Los_Angeles").format('MMMM Do YYYY, h:mm:ss a');
 
-// Define collection and schema for Items
 var Item = new Schema({
+  timestamp: {
+    type: String, default: dateNow
+  },
+  title:{
+    type: String
+  },
   Noun1: {
     type: String
   },
