@@ -77,6 +77,7 @@ export default {
       background-image: linear-gradient(to bottom, rgb(255, 0, 183), blue);
       padding-left: 0%;
       padding-right: 0%;
+      height: 100vh;
 
     }
     #bottom_link{
@@ -90,5 +91,6 @@ export default {
     }
     body{
       background-image: linear-gradient(to bottom, rgb(255, 0, 183), blue);
+      height: 100vh;
     }
 </style>
